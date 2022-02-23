@@ -1,0 +1,19 @@
+{
+    "name": "lenovo/app_salon_php_mvc_js_sass",
+    "description": "Proyecto php8, mvc, gulp, sass, js",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controllers\\": "./controllers",
+            "Model\\": "./models"
+        }
+    },
+    "authors": [
+        {
+            "name": "PabloChacon1997",
+            "email": "pabloandres120297@gmail.com"
+        }
+    ],
+    "require": {}
+}
