@@ -2,6 +2,8 @@
 
 <p class="descripcion-pagina">Inicia sesion con tus datos</p>
 
+<?php include_once __DIR__.'/../templates/alertas.php'; ?>
+
 <form method="POST" action="/" class="formulario">
   <div class="campo">
     
