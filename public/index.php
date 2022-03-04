@@ -7,6 +7,9 @@ use MVC\Router;
 use Controllers\CitaController;
 use Controllers\LoginController;
 
+// SERVER
+use Controllers\APIController;
+
 $router = new Router();
 
 /** Iniciar Sesion */
@@ -30,6 +33,11 @@ $router->get('/mensaje', [LoginController::class, 'mensaje']);
 
 /** AREA PRIVADA */
 $router->get('/cita', [CitaController::class, 'index']);
+
+/** API's */
+// API de citas
+$router->get('/api/servicios', [APIController::class, 'index']);
+
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();
