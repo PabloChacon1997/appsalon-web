@@ -12,3 +12,10 @@ function s($html) : string {
     $s = htmlspecialchars($html);
     return $s;
 }
+
+// Revisar utenticacion
+function isAuth(): void {
+    if (!isset($_SESSION['login'])) {
+       header('Location: /');
+    }
+}
