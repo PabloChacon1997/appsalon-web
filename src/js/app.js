@@ -158,8 +158,6 @@ function seleccionarServicio(servicio) {
     cita.servicios = [...servicios, servicio];
     divServicio.classList.add("seleccionado");
   }
-
-  console.log(cita);
 }
 
 function nombreCliente() {
@@ -193,7 +191,6 @@ function seleccionarHora() {
       mostrarAlerta("Hora no válida", "error", ".formulario");
     } else {
       cita.hora = e.target.value;
-      // console.log(cita);
     }
   });
 }
@@ -283,7 +280,6 @@ function mostrarResumen() {
     year: "numeric",
   };
   const fechaFormateada = fechaUTC.toLocaleDateString("es-ES", opciones);
-  console.log(fechaFormateada);
 
   const fechaCliente = document.createElement("P");
   fechaCliente.innerHTML = `<span>Fecha: </span> ${fecha}`;
@@ -348,6 +344,4 @@ async function reservarCita() {
       text: "Hubo un error al guardar la cita, contactenos!!",
     });
   }
-
-  // console.log([...datos]);
 }
